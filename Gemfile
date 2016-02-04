@@ -20,6 +20,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'angular-rails4-templates', '~> 0.4.1'
+gem 'ng-rails-csrf'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
