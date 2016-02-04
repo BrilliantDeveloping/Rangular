@@ -7,6 +7,7 @@
     "angular-cookies": "latest",
     "angular-sanitize": "latest",
     "angular-ui-router": "0.2.15",
-    "angularjs-rails-resource": "2.0.0"
+    "angularjs-rails-resource": "2.0.0",
+    "ng-token-auth": "0.0.28"
   }
 }
