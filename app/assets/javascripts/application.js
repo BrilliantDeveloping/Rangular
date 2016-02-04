@@ -4,4 +4,6 @@
 //= require angular-sanitize/angular-sanitize
 //= require angular-ui-router/release/angular-ui-router
 //= require angularjs-rails-resource/angularjs-rails-resource
-//= require_tree .
+
+//= require_directory .
+//= require_tree ./angular

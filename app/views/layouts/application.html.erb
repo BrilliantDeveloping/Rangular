@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Rangular</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  Hey there
-</body>
+  <head>
+    <title>Rangular</title>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body ng-app="rangular">
+    <div ui-view></div>
+    <%= javascript_include_tag 'application' %>
+  </body>
 </html>
