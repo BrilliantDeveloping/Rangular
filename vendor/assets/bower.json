@@ -1,6 +1,12 @@
 {
   "name": "dsl-generated dependencies",
   "dependencies": {
-    "jquery": "2.1.4"
+    "jquery": "2.1.4",
+    "angular": "1.4.9",
+    "angular-animate": "1.4.9",
+    "angular-cookies": "latest",
+    "angular-sanitize": "latest",
+    "angular-ui-router": "0.2.15",
+    "angularjs-rails-resource": "2.0.0"
   }
 }
