@@ -1,0 +1,35 @@
+angular.module "rangular"
+  .config ($stateProvider, $urlRouterProvider) ->
+
+    authenticateRoute = ($auth, $state) ->
+      $auth.validateUser().catch (res) ->
+        $state.go 'login'
+        return
+
+    $stateProvider
+      .state 'main',
+        url: '/'
+        template: 'Hey there!'
+
+      .state "login",
+        url: "/login"
+        templateUrl: "<%= asset_path 'angular/auth/login.html' %>"
+        controller: 'AuthCtrl'
+        
+      .state "register",
+        url: "/register"
+        templateUrl: "<%= asset_path 'angular/auth/register.html' %>"
+        controller: 'AuthCtrl'
+              
+      .state "logout",
+        url: "/logout"
+        templateProvider: ($auth, $state) ->
+          $auth.signOut().then((resp) ->
+            return
+          ).catch (resp) ->
+            return
+          return
+        resolve: auth: authenticateRoute
+
+      
+      $urlRouterProvider.otherwise '/'
