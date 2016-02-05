@@ -3,8 +3,10 @@
 //= require ng-rails-csrf
 //= require angular-rails4-templates
 //= require angular-cookie/angular-cookie
+//= require angular-material/angular-material
 //= require ng-token-auth/dist/ng-token-auth
 //= require angular-animate/angular-animate
+//= require angular-aria/angular-aria
 //= require angular-sanitize/angular-sanitize
 //= require angular-ui-router/release/angular-ui-router
 //= require angularjs-rails-resource/angularjs-rails-resource

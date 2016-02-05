@@ -2,8 +2,10 @@ angular.module "rangular", [
   'ngAnimate'
   'ngSanitize'
   'ui.router'
-  'ng-rails-csrf'
+  'ngMaterial'
   'templates'
+  'ng-rails-csrf'
+  'ng-token-auth'
 ]
 
 angular.module "rangular"
